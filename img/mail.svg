@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WEB_DESKTOP" transform="translate(-92.000000, -2894.000000)" fill="#232323" fill-rule="nonzero">
+            <g id="CONTACT-DETAILS" transform="translate(92.000000, 2844.000000)">
+                <g id="Group-18" transform="translate(0.000000, 47.000000)">
+                    <path d="M19.8,3 L2.2,3 C0.99,3 0,3.99 0,5.2 L0,18.4 C0,19.61 0.99,20.6 2.2,20.6 L19.8,20.6 C21.01,20.6 22,19.61 22,18.4 L22,5.2 C22,3.99 21.01,3 19.8,3 Z M19.36,7.675 L12.166,12.174 C11.451,12.625 10.549,12.625 9.834,12.174 L2.64,7.675 C2.365,7.499 2.2,7.202 2.2,6.883 C2.2,6.146 3.003,5.706 3.63,6.091 L11,10.7 L18.37,6.091 C18.997,5.706 19.8,6.146 19.8,6.883 C19.8,7.202 19.635,7.499 19.36,7.675 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
