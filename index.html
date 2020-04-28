@@ -111,16 +111,20 @@
         </div>
         <div class="row d-flex flex-column mt-50 mb-50">
             <div class="col">
-                <h1 class="extra-bold">Some of the partners that trusted us</h1>
-                <h4>We believe in building relationships, not client lists.</h4>
+                <h3 class="extra-bold section-title title center-mob">Some of the partners that trusted us</h3>
+                <h4 class="center-mob">We believe in building relationships, not client lists.</h4>
             </div>
-            <div class="col mt-100">
-                <img src="img/partners.png" class="img-responsive full-width">
+            <div class="col mt-50">
+                <!-- changeto 150 on desktop -->
+                <picture>
+                    <source media="(min-width: 450px)" srcset="img/partners.png">
+                    <img src="img/partners-mobile.png" class="img-responsive full-width">
+                </picture>
             </div>
         </div>
         <div class="row mt-150">
-            <div class="col col-lg-5">
-                <img src="img/tcg.svg" class="img-responsive expanded">
+            <div class="col col-md-7 col-lg-5">
+                <img src="img/tcg.svg" class="img-responsive expanded d-none d-md-block">
             </div>
         </div>
     </div>
@@ -131,7 +135,8 @@
                     <h2 class="extra-bold"> Contact Us <br> It's easy.</h2>
                 </div>
                 <div class="col d-flex justify-content-end">
-                    <img src="img/map.png" class="img-responsive map">
+                    <!-- move map lower on 762 -->
+                    <img src="img/map.png" class="img-responsive map d-none d-md-block">
                 </div>
             </div>
             <div class="row align-content-end contactRow">
@@ -164,7 +169,7 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
