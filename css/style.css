@@ -311,12 +311,9 @@ h1 {
 
 @media screen and (min-width: 405px) {
 
-    .companySquare {
+    .scene {
         height: 170px;
         width: 170px;
-        margin-bottom: 20px;
-        background-color: #e4e4e4;
-        display: flex;
     }
 
     .contactIcon {
@@ -421,7 +418,7 @@ h1 {
         font-size: 2.5rem;
     }
 
-    .companySquare {
+    .scene {
         height: 300px;
         width: 300px;
     }
