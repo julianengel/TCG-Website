@@ -95,13 +95,36 @@
         </div>
         <div class="row mt-5 companyRow">
             <div class="col-12 col-md-8 d-flex flex-wrap justify-content-center justify-content-md-start no-padding-left">
-                <div class="companySquare mr-20"> <img src="img/dev_watermark.svg" class="img-responsive"></div>
-                <div class="companySquare"> <img src="img/foundation_watermark.svg" class="img-responsive"></div>
+                <div class="scene mr-20">
+                    <div class="card" id="Codeero Development">
+                        <div class="card__face card__face--front"><img src="img/dev_watermark.svg" class="img-responsive companyLogo"></div>
+                        <div class="card__face card__face--back activeCompany"><img src="img/dev_black.svg" class="img-responsive companyLogo "></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="Codeero Foundation">
+                        <div class="card__face card__face--front"><img src="img/foundation_watermark.svg" class="img-responsive companyLogo"></div>
+                        <div class="card__face card__face--back activeCompany"><img src="img/dev_black.svg" class="img-responsive companyLogo "></div>
+                    </div>
+                </div>
+                <div class="scene mr-20">
+                    <div class="card" id="Codeero Events">
+                        <div class="card__face card__face--front"><img src="img/events_watermark.svg" class="img-responsive companyLogo"></div>
+                        <div class="card__face card__face--back activeCompany"><img src="img/dev_black.svg" class="img-responsive companyLogo "></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="Codeero Labs">
+                        <div class="card__face card__face--front"><img src="img/labs_watermark.svg" class="img-responsive companyLogo"></div>
+                        <div class="card__face card__face--back activeCompany"><img src="img/dev_black.svg" class="img-responsive companyLogo "></div>
+                    </div>
+                </div>
+                <!--       <div class="companySquare"> <img src="img/foundation_watermark.svg" class="img-responsive"></div>
                 <div class="companySquare mr-20"> <img src="img/events_watermark.svg" class="img-responsive"></div>
-                <div class="companySquare"> <img src="img/labs_color.svg" class="img-responsive active"></div>
+                <div class="companySquare"> <img src="img/labs_color.svg" class="img-responsive active"></div> -->
             </div>
             <div class="col-12 col-md-4 d-flex flex-column">
-                <h2 class="extra-bold companyHeading no-padding-top mt-0 align-self-md-end"> Codeero Labs</h2>
+                <h2 class="extra-bold companyHeading no-padding-top mt-0 align-self-md-end" id="companyTitle"> Codeero Labs</h2>
                 <p class="companyDescription"> At the heart of all of our companies, we try to craft unique, beautiful and engaging experiences. Therefore, we strive to utilize innovative technologies and approaches to make our solutions easy to use, sustainable and intuitive.</p>
                 <div class="switch-outline d-flex align-self-md-end">
                     <div class="circleBG"></div>
@@ -171,6 +194,27 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+    let companyTitle = document.getElementById('companyTitle')
+    let dev, found, labs, events;
+    dev = document.getElementById('Codeero Development')
+    found = document.getElementById('Codeero Foundation')
+    labs = document.getElementById('Codeero Labs')
+    events = document.getElementById('Codeero Events')
+    let cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+
+        card.addEventListener('click', function() {
+            dev.classList.remove('is-flipped')
+            found.classList.remove('is-flipped')
+            labs.classList.remove('is-flipped')
+            events.classList.remove('is-flipped')
+            card.classList.toggle('is-flipped');
+            console.log(card.id)
+            companyTitle.innerHTML = card.id;
+        });
+    })
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

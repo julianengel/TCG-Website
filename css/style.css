@@ -8,6 +8,65 @@ h1 {
     text-transform: uppercase;
 }
 
+/* TRYING CARD TURN*/
+
+.activeCompany {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-bottom: 8px solid transparent;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    border-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='120px' height='61px' viewBox='0 0 120 61' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3ClinearGradient x1='13.652952%25' y1='41.1220114%25' x2='74.9269157%25' y2='54.7828394%25' id='linearGradient-1'%3E%3Cstop stop-color='%23346AB3' offset='0%25'%3E%3C/stop%3E%3Cstop stop-color='%2336C3F3' offset='88.8834716%25'%3E%3C/stop%3E%3Cstop stop-color='%2336C5F4' offset='100%25'%3E%3C/stop%3E%3Cstop stop-color='%2336C5F4' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Crect id='Rectangle' fill='url(%23linearGradient-1)' fill-rule='nonzero' x='0' y='0' width='120' height='61'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E") 25%;
+
+}
+
+.companyLogo {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.scene {
+    width: 150px;
+    height: 150px;
+    perspective: 600px;
+    margin-bottom: 20px;
+
+    background: transparent;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card__face {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card__face--front {
+    background: #e4e4e4;
+}
+
+.card__face--back {
+    background: #ffffff;
+    transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+
 /* Margins */
 .mb-50 {
     margin-bottom: 50px;
@@ -185,32 +244,6 @@ h1 {
 
 /* Our Companies */
 
-.companySquare {
-    height: 150px;
-    width: 150px;
-    margin-bottom: 20px;
-    background-color: #e4e4e4;
-    display: flex;
-}
-
-.companySquare>img {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-}
-
-.companySquare>.active {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border-bottom: 8px solid transparent;
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    border-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='120px' height='61px' viewBox='0 0 120 61' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3ClinearGradient x1='13.652952%25' y1='41.1220114%25' x2='74.9269157%25' y2='54.7828394%25' id='linearGradient-1'%3E%3Cstop stop-color='%23346AB3' offset='0%25'%3E%3C/stop%3E%3Cstop stop-color='%2336C3F3' offset='88.8834716%25'%3E%3C/stop%3E%3Cstop stop-color='%2336C5F4' offset='100%25'%3E%3C/stop%3E%3Cstop stop-color='%2336C5F4' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Crect id='Rectangle' fill='url(%23linearGradient-1)' fill-rule='nonzero' x='0' y='0' width='120' height='61'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E") 25%;
-
-}
-
 .companyHeading {
     width: 60%;
     font-size: 1.5rem;
@@ -271,9 +304,9 @@ h1 {
 }
 
 /* maybe remove on desktop?*/
-.socialIcon{
+.socialIcon {
 
-  width: 40px;
+    width: 40px;
 }
 
 @media screen and (min-width: 405px) {
@@ -339,8 +372,8 @@ h1 {
         /* initial ratio of 1:1 - box making*/
     }
 
-    #serviceDescription{
-      height: 500px;
+    #serviceDescription {
+        height: 500px;
     }
 
     .companyHeading {
