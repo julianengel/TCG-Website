@@ -38,6 +38,7 @@ h1 {
 
 /* Helpers */
 
+
 .md-br {
     display: none;
 }
@@ -151,15 +152,17 @@ h1 {
 /* Services Offered Boxes */
 
 .service {
+    border-bottom: 1.5px solid white;
+}
+
+
+
+#serviceContainer {
+    border-top: 1.5px solid white;
     border-left: 1.5px solid white;
     border-right: 1.5px solid white;
-    border-bottom: 1.5px solid white;
-
 }
 
-.service#top {
-    border-top: 1.5px solid white;
-}
 
 .service>h3 {
     margin-top: 15px;
@@ -333,6 +336,10 @@ h1 {
 
 @media screen and (min-width: 768px) {
 
+    .spacer {
+        height: 23px;
+    }
+
     .md-br {
         display: block;
     }
@@ -350,7 +357,7 @@ h1 {
 
     .service>h3 {
         margin-top: 25px;
-        font-size: 1.2em;
+        font-size: 0.8em;
     }
 
     .service.active {
@@ -401,6 +408,12 @@ h1 {
 
     .no-padding-left {
         padding-left: 0px;
+    }
+
+    .service>h3{
+
+      font-size: 1.2em;
+
     }
 
     .circleBG {

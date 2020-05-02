@@ -72,7 +72,7 @@
                     <h3>Enterprise <br class="md-br">Apps</h3>
                 </div>
                 <div class="col-12 col-md-2 service">
-                    <h3>Events</h3>
+                    <h3>Events</h3> <div class="spacer"></div>
                 </div>
                 <div class="col-12 col-md-2 service">
                     <h3>Non <br class="md-br">Profit</h3>
@@ -210,6 +210,16 @@
             console.log(card.id)
             companyTitle.innerHTML = card.id;
         });
+    })
+
+    let services = document.querySelectorAll('.service');
+    services.forEach(service =>{
+        service.addEventListener('click', function(){
+            services.forEach(notClicked =>{
+                notClicked.classList.remove('active')
+            })
+            service.classList.toggle('active')
+        })
     })
     </script>
     <!-- Optional JavaScript -->
