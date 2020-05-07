@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test</title>
+    <style type="text/css">
+    /* Keyframes for the fade-in */
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Keyframes for the fade-in */
+    @-webkit-keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-moz-keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+
+    .fade-in {
+        opacity: 0;
+        /*just in case ie*/
+        -webkit-animation: fadeIn ease-in 1;
+        -moz-animation: fadeIn ease-in 1;
+        animation: fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-duration: 2s;
+        -webkit-animation-delay: 4.5s;
+        -moz-animation-delay: 4.5s;
+        animation-delay: 4.5s;
+    }
+
+    .fade-out {
+
+        opacity: 1;
+        /*just in case ie*/
+        -webkit-animation: fadeOut ease-in 1;
+        -moz-animation: fadeOut ease-in 1;
+        animation: fadeOut ease-in 1;
+
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-duration: 2s;
+        -webkit-animation-delay: 4.5s;
+        -moz-animation-delay: 4.5s;
+        animation-delay: 4.5s;
+
+
+    }
+
+    .overlap {
+        margin-left: -394px;
+    }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center; padding: 150px 0;">
+        <object>
+            <embed src="logo.svg" class="fade-out"> </embed>
+        </object>
+        <object>
+            <embed src="logo_color.svg" class="fade-in overlap"> </embed>
+        </object>
+    </div>
+</body>
+
+</html>
