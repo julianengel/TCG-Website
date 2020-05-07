@@ -51,14 +51,20 @@
                 </div>
             </div>
         </nav>
-        <div id="animationPlaceHolder">
-            <div id="logoAnimation">
-                <object>
-                    <embed src="img/logo_animated.svg" class="fade-out outlined"> </embed>
-                </object>
-                <object>
-                    <embed src="img/logo_animated_color.svg" class="fade-in color"> </embed>
-                </object>
+        <div class="container">
+            <div class="row" id="animationPlaceHolder">
+                <div class="col ">
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-end ">
+                    <div id="logoAnimation" class="">
+                        <object>
+                            <embed src="img/logo_animated.svg" class="fade-out outlined"> </embed>
+                        </object>
+                        <object>
+                            <embed src="img/logo_animated_color.svg" class="fade-in color"> </embed>
+                        </object>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
@@ -231,6 +237,8 @@
             service.classList.toggle('active')
         })
     })
+
+
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
