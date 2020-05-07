@@ -165,6 +165,17 @@ h1 {
 /*animation end*/
 
 
+/* TYPING*/
+
+.txt-rotate>.wrap {
+    border-right: 0.08em solid #666
+}
+
+.ticked {
+    border-right: 0.08em solid #666
+}
+
+
 /* Margins */
 .mb-50 {
     margin-bottom: 50px;
