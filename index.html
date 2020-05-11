@@ -12,7 +12,7 @@
     <title>The Codeero Group</title>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
     <div class="above">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -52,22 +52,22 @@
             </div>
         </nav>
         <div class="container">
-            <div class="row" id="animationPlaceHolder">
-                <div class="col d-flex align-items-center">
-                    <div>
-                        <h2 style="font-size: 70px; font-weight: 800"><span id="cet" class=""></span> 
-                            <span class="txt-rotate" data-period="2000" data-rotate='[ "connect.", " educate.", " inspire.", "captivate." ]' style="text-decoration: underline;"></span>
-                        </h2>
-                    </div>
-                </div>
-                <div class="col d-flex flex-column justify-content-center align-items-end ">
-                    <div id="logoAnimation" class="">
+            <div class="row flex-md-row-reverse" id="animationPlaceHolder">
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-md-center align-items-center align-items-md-end">
+                    <div id="logoAnimation" class="mt-5">
                         <object>
                             <embed src="img/logo_animated.svg" class="fade-out outlined"> </embed>
                         </object>
                         <object>
                             <embed src="img/logo_animated_color.svg" class="fade-in color"> </embed>
                         </object>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-md-center">
+                    <div style="min-height: 400px;" class="pt-5 pt-md-0">
+                        <h2 style="font-size: 3.5rem; font-weight: 800;"><span id="cet" class=""></span> <br>
+                            <span class="txt-rotate" data-period="2000" data-rotate='[ "connect.", " educate.", " inspire.", "captivate." ]' style="text-decoration: underline;"></span>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -249,18 +249,28 @@
     let typeDestination = document.getElementById('cet');
     var i = 0;
     var txt = 'Crafting experiences that ';
-    var speed = 250;
+    var speed = 150;
 
     function typeOnce() {
         if (i < txt.length) {
             typeDestination.innerHTML += txt.charAt(i);
             i++;
             setTimeout(typeOnce, speed);
-        } else{
-            setTimeout(function(){
+        } else {
+            setTimeout(function() {
                 typeDestination.classList.remove('ticked')
-            },100)
-            
+
+                var elements = document.getElementsByClassName('txt-rotate');
+                for (var i = 0; i < elements.length; i++) {
+                    var toRotate = elements[i].getAttribute('data-rotate');
+                    var period = elements[i].getAttribute('data-period');
+                    if (toRotate) {
+                        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                    }
+                }
+
+            }, 150)
+
         }
     }
 
@@ -308,28 +318,19 @@
 
     window.onload = function() {
 
-        setTimeout(() => { 
-            typeDestination.classList.add('ticked')
-            typeOnce() }, 8000);
         setTimeout(() => {
-            var elements = document.getElementsByClassName('txt-rotate');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-rotate');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-        }, 15000);
+            typeDestination.classList.add('ticked')
+            typeOnce()
+        }, 8000);
 
 
     };
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
