@@ -104,9 +104,12 @@
     <div class="container mb-md-50">
         <div class="row d-flex flex-column mobile-margins-services">
             <div class="mb-50" id="serviceDescription"></div>
-            <div class="switch-outline d-flex align-self-end">
-                <div class="circleBG"></div>
-                <span class='learnMore'>Contact Us</span>
+            <div class="switch-outline align-self-end">
+                <div class='wrap d-flex' onclick='toggleButton(this)'>
+                    <div class="circleBG">
+                    </div>
+                    <span class='learnMore'>Contact Us</span>
+                </div>
             </div>
         </div>
         <div class="row mt-5">
@@ -144,9 +147,12 @@
             <div class="col-12 col-md-4 d-flex flex-column">
                 <h2 class="extra-bold companyHeading no-padding-top mt-0 align-self-md-end" id="companyTitle"> Codeero Labs</h2>
                 <p class="companyDescription"> At the heart of all of our companies, we try to craft unique, beautiful and engaging experiences. Therefore, we strive to utilize innovative technologies and approaches to make our solutions easy to use, sustainable and intuitive.</p>
-                <div class="switch-outline d-flex align-self-md-end">
-                    <div class="circleBG"></div>
-                    <span class='learnMore'>Learn More</span>
+                <div class="switch-outline align-self-end">
+                    <div class='wrap d-flex' onclick='toggleButton(this)'>
+                        <div class="circleBG">
+                        </div>
+                        <span class='learnMore'>Learn More</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -321,12 +327,19 @@
 
 
     };
+
+    function toggleButton(element) {
+        element.style.transform = 'translateX(62%)';
+        element.style.webkitTransform = 'translateX(62%)';
+        element.style.msTransform = 'translateX(62%)';
+        setTimeout(function() { window.location.href = 'https://www.codeero.com' }, 1000);
+    }
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
