@@ -183,6 +183,40 @@ h1 {
     margin-right: auto;
 }
 
+.dropdown-menu {
+    border-radius: 0px;
+    background-color: #F3F3F3;
+    border: 2px solid white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* accesibility slap*/
+a {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown-item {
+    border-top: 2px solid white;
+    padding-top: 10px;
+    font-weight: 700;
+
+}
+
+.dropdown-item:active {
+    background-color: #c9c9c9;
+
+}
+
+#noTopBorder {
+    border-top: 0px solid white;
+}
+
+.navbar-toggler{
+    border-radius: 0px !important;
+}
+
 
 /* Helpers */
 
