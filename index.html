@@ -166,8 +166,13 @@
     </div>
     <div class="container mb-md-50">
         <div class="row d-flex flex-column mobile-margins-services">
-            <div class="mb-50" id="serviceDescriptionContainer">
-                <p id="serviceDescription">The Codeero Group is your go-to partner for all your Web Development needs, with a large offering of services ranging from Websites, E-Commerce, Web Applications to Content Management and Distribution Systems. Each project is carefully crafted from the ground up, starting with the selection of the right technologies and tools to final optimizations, to make our solutions cost-effective, stunningly beautiful and blazingly fast. </p>
+            <div class="mb-50 d-flex" id="serviceDescriptionContainer">
+                <div class="d-none d-md-flex col-5 align-items-center justify-content-center">
+                    <img src="img/services/webdev.png" id="serviceImage">
+                </div>
+                <div class="col-12 col-md-7 d-flex align-items-center justify-content-center">
+                    <p id="serviceDescription" style="font-size: 1.2rem">The Codeero Group is your go-to partner for all your Web Development needs, with a large offering of services ranging from Websites, E-Commerce, Web Applications to Content Management and Distribution Systems. Each project is carefully crafted from the ground up, starting with the selection of the right technologies and tools to final optimizations, to make our solutions cost-effective, stunningly beautiful and blazingly fast. </p>
+                </div>
             </div>
             <div class="switch-outline align-self-end">
                 <div class='wrap d-flex' onclick='toggleButton(this)'>
@@ -185,21 +190,21 @@
         <div class="row mb-md-5">
             <div class="col-12 col-md-3 d-flex flex-column">
                 <img src="img/process/meet.svg" class="align-self-center">
-                <p class="process-text">We meet with the client, determine project scope, requirements and details.</p>
+                <p class="process-text">During the first meeting project scope, requirements and details are determined.</p>
             </div>
             <div class="col-12 col-md-1 d-flex justify-content-center">
                 <img src="img/process/arrow.svg" class="align-self-center arrow">
             </div>
             <div class="col-12 col-md-4 d-flex flex-column">
                 <img src="img/process/pm.svg">
-                <p class="process-text">Dedicated project manager is assigned, who will connect all parties involved (designers, coders, photographers, providers).</p>
+                <p class="process-text">A dedicated project manager is assigned, who will connect all parties involved (designers, coders, photographers, providers).</p>
             </div>
             <div class="col-12 col-md-1 d-flex justify-content-center">
                 <img src="img/process/arrow.svg" class="align-self-center arrow">
             </div>
             <div class="col-12 col-md-3 d-flex flex-column">
                 <img src="img/process/close.svg">
-                <p class="process-text">The PM works closely with the client and staff involved to create the first version of the experience.</p>
+                <p class="process-text">The PM works closely with the client and staff involved to create the first version of The Experience.</p>
             </div>
         </div>
         <div class="row mt-md-5">
@@ -215,7 +220,7 @@
             </div>
             <div class="col-12 col-md-4 d-flex flex-column">
                 <img src="img/process/prod.svg">
-                <p class="process-text">Experience is rolled out or opened up to the public.</p>
+                <p class="process-text">The Experience is rolled out and opened up to the public.</p>
             </div>
         </div>
         <div class="row mt-100">
@@ -326,36 +331,6 @@
         </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript">
-    function pasteDescritpion(id) {
-
-        let serviceDescription = document.getElementById('serviceDescription')
-        let serviceDescriptions = {
-            'webdev': "The Codeero Group is your go-to partner for all your Web Development needs, with a large offering of services ranging from Websites, E-Commerce, Web Applications to Content Management and Distribution Systems. Each project is carefully crafted from the ground up, starting with the selection of the right technologies and tools to final optimizations, to make our solutions cost-effective, stunningly beautiful and blazingly fast. ",
-            'brands': "No matter if you are just starting out or planning to rebrand your established business, The Codeero Group can help you with a full brand identity. Seasoned designers will work closely with you to craft a new logo that perfectly represents your company and vision, and further reinforce the Brand Identity with Stationary, Social Media Assets as well as a beautiful, comprehensive brand-guide to enable you to use your new brand to its fullest potential. ",
-            'mobapp': "The Codeero Group offers a wide array of digital solutions to businesses of all sizes, including custom, enterprise-grade software and applications, security solutions as well as set-up and customization of third-party applications.  Past projects have ranged from corporate travel-management and optimization software, through Throughput Optimization Applications for the Food and Restaurant industries, serving between only a few users to a few thousand. TCG strives to offer cost-efficiency and business-flow optimizations through AI Powered solutions and innovative approaches.  ",
-            'entapp': "Codeero Events, founded in 2015, strives to create professional, captivating and unforgettable events spanning a wide array of categories. With experience in Hackathons, Technical and Educational Workshops, Sporting Events and Corporate Celebrations, serving anyone from High Schoolers trough Senior Citizens, Codeero Events can help you make your occasion truly striking. ",
-            'events': "The Codeero Group specializes in a variety of events, including educational events, technical workshops, corporate celebrations as well as small- and large-scale sporting events. Through in-house events such as Hackathons, Let’s Code Cyprus and other event series, Codeero Events strives to help educate and inspire both our youth and senior citizens. Furthermore the firm aims to help everyone embrace the technological revolution and be passionate about STEM. Codeero Events can help you put on your tech event, no matter if its a Corporate Celebration, Workshop or Digital Event.",
-            'nonprof': "The Codeero Group, formerly known as Julo’s Development, started in 2014 as small, one-person business before growing to the company it is now. Knowing the challenges of starting and running a business, The Codeero Foundation offers heavily subsidized services (Web & Mobile Development, Branding, Design etc) to small and family run businesses and young entrepreneurs, to help get them online and establish an online presence at an affordable price. Find out more over at The Codeero Foundation."
-        }
-        serviceDescription.innerHTML = serviceDescriptions[id]
-
-
-    }
-
-    let services = document.querySelectorAll('.service');
-    services.forEach(service => {
-        service.addEventListener('click', function() {
-            services.forEach(notClicked => {
-                notClicked.classList.remove('active')
-            })
-            service.classList.toggle('active')
-            console.log(service.id)
-            pasteDescritpion(service.id)
-
-        })
-    })
-    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

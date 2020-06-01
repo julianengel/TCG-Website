@@ -369,27 +369,39 @@ a {
 
 #serviceDescription {
 
-    height: 370px;
-    width: 100%;
-    background-color: rgb(228, 228, 228, 0.5);
-    border: 1px solid white;
     padding: 15px 10px 20px 10px;
 
 }
 
-.process-text{
+#serviceDescriptionContainer {
+    height: 550px;
+    width: 100%;
+    background-color: rgb(228, 228, 228, 0.5);
+    border: 1px solid white;
+}
+
+.process-text {
 
     width: 80%;
     text-align: center;
-    margin:auto;
+    margin: auto;
     margin-top: 15px;
 }
 
-.minheight90{
+
+#serviceImage {
+
+    max-height: 50%;
+    max-width: 50%;
+
+
+}
+
+.minheight90 {
     min-height: 90px;
 }
 
-.arrow{
+.arrow {
     transform: rotate(90deg);
     margin: 50px 0px 50px 0px;
 }
@@ -482,7 +494,7 @@ a {
 
 /* Contact */
 
-#map{
+#map {
 
     margin-bottom: -20%;
 }
@@ -524,7 +536,20 @@ a {
 }
 
 
+@media screen and (max-width: 380px) {
 
+
+    #serviceDescriptionContainer {
+        height: 600px;
+    }
+
+    .contactIcon {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+
+}
 
 @media screen and (min-width: 405px) {
 
@@ -548,6 +573,20 @@ a {
 
 
 }
+
+
+@media screen and (min-width: 445px) {
+
+
+    #serviceDescriptionContainer {
+        height: 500px;
+
+    }
+
+
+}
+
+
 
 @media screen and (min-width: 768px) {
 
@@ -580,6 +619,7 @@ a {
         animation: moveright 2.6s forwards;
         animation-delay: 5.3s;
     }
+
 
     .scene {
         width: 200px;
@@ -626,10 +666,10 @@ a {
         /* initial ratio of 1:1 - box making*/
     }
 
-    .arrow{
-    transform: rotate(0deg);
-    margin: unset;
-}
+    .arrow {
+        transform: rotate(0deg);
+        margin: unset;
+    }
 
 
     .companyHeading {
@@ -657,9 +697,9 @@ a {
     }
 
 
-.contactMethod {
-    padding-bottom: unset;
-}
+    .contactMethod {
+        padding-bottom: unset;
+    }
 
 
 
@@ -711,6 +751,13 @@ a {
         font-size: 2.5rem;
     }
 
+    #serviceDescriptionContainer {
+        height: 370px;
+
+    }
+
+
+
     .scene {
         height: 300px;
         width: 300px;
@@ -732,10 +779,10 @@ a {
         text-align: left;
     }
 
-    #map{
+    #map {
 
-    margin-bottom: -10%;
-}
+        margin-bottom: -10%;
+    }
 
 
     .contactMethod a {

@@ -116,3 +116,33 @@ function toggleButton(element) {
     element.style.msTransform = 'translateX(62%)';
     setTimeout(function() { window.location.href = '/comingsoon' }, 1000);
 }
+
+
+function pasteDescritpion(id) {
+
+    let serviceDescription = document.getElementById('serviceDescription')
+    let serviceImage = document.getElementById('serviceImage')
+    let serviceDescriptions = {
+        'webdev': { "text": "The Codeero Group is your go-to partner for all your Web Development needs, with a large offering of services ranging from Websites, E-Commerce, Web Applications to Content Management and Distribution Systems. Each project is carefully crafted from the ground up, starting with the selection of the right technologies and tools to final optimizations, to make our solutions cost-effective, stunningly beautiful and blazingly fast. ", "img": "img/services/webdev.png" },
+        'brands': { "text": "No matter if you are just starting out or planning to rebrand your established business, The Codeero Group can help you with a full brand identity. Seasoned designers will work closely with you to craft a new logo that perfectly represents your company and vision, and further reinforce the Brand Identity with Stationary, Social Media Assets as well as a beautiful, comprehensive brand-guide to enable you to use your new brand to its fullest potential. ", "img": "img/services/branding.png" },
+        'mobapp': { "text": "The Codeero Group’s expert mobile development team works closely with the client to determine the best tools to help leverage the power of mobile apps for their brand or vision. No matter if native applications for iOS and Android, Cross Platform or Progressive Web Applications, the development team ships performance-critical, highly reliable and user-friendly mobile applications. ", "img": "img/services/mobileapp.png" },
+        'entapp': { "text": "Codeero Events, founded in 2015, strives to create professional, captivating and unforgettable events spanning a wide array of categories. With experience in Hackathons, Technical and Educational Workshops, Sporting Events and Corporate Celebrations, serving anyone from High Schoolers trough Senior Citizens, Codeero Events can help you make your occasion truly striking. ", "img": "img/services/enterprise.png" },
+        'events': { "text": "The Codeero Group specializes in a variety of events, including educational events, technical workshops, corporate celebrations as well as small- and large-scale sporting events. Through in-house events such as Hackathons and our event series, Codeero Events strives to help educate and inspire both our youth and senior citizens. Furthermore the firm aims to help everyone embrace the technological revolution and be passionate about STEM. CE can help you put on your tech event, no matter if it is a Corporate Celebration, Workshop or Digital Event.", "img": "img/services/events.png" },
+        'nonprof': { "text": "The Codeero Group, formerly known as Julo’s Development, started in 2014 as small, one-person business before growing to the company it is now. Knowing the challenges of starting and running a business, The Codeero Foundation offers heavily subsidized services (Web & Mobile Development, Branding, Design etc) to small and family run businesses and young entrepreneurs, to help get them online and establish an online presence at an affordable price. Find out more over at The Codeero Foundation.", "img": "img/services/nonprofit.png" }
+    }
+    serviceDescription.innerHTML = serviceDescriptions[id].text
+    serviceImage.src = serviceDescriptions[id].img
+}
+
+let services = document.querySelectorAll('.service');
+services.forEach(service => {
+    service.addEventListener('click', function() {
+        services.forEach(notClicked => {
+            notClicked.classList.remove('active')
+        })
+        service.classList.toggle('active')
+        console.log(service.id)
+        pasteDescritpion(service.id)
+
+    })
+})
