@@ -369,11 +369,29 @@ a {
 
 #serviceDescription {
 
-    height: 350px;
+    height: 370px;
     width: 100%;
     background-color: rgb(228, 228, 228, 0.5);
     border: 1px solid white;
+    padding: 15px 10px 20px 10px;
 
+}
+
+.process-text{
+
+    width: 80%;
+    text-align: center;
+    margin:auto;
+    margin-top: 15px;
+}
+
+.minheight90{
+    min-height: 90px;
+}
+
+.arrow{
+    transform: rotate(90deg);
+    margin: 50px 0px 50px 0px;
 }
 
 /* Our Companies */
@@ -583,7 +601,7 @@ a {
 
     }
 
-    .service#top {
+    .service#webdev {
         border-top: 0px solid transparent;
     }
 
@@ -608,9 +626,11 @@ a {
         /* initial ratio of 1:1 - box making*/
     }
 
-    #serviceDescription {
-        height: 500px;
-    }
+    .arrow{
+    transform: rotate(0deg);
+    margin: unset;
+}
+
 
     .companyHeading {
         width: 100%;

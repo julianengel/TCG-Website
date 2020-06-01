@@ -138,27 +138,27 @@
         <div class="container mt-desktop">
             <div class="row">
                 <div class="col no-padding-left">
-                    <h3 class="extra-bold mb-50 title">Our Services</h3>
+                    <h3 class="extra-bold mb-50 title">OUR SERVICES</h3>
                 </div>
             </div>
             <div class="row mobile-margins-services" id="serviceContainer">
-                <div class="col-12 col-md-2 service" id="top">
-                    <h3>Web <br class="md-br">Development</h3>
-                </div>
-                <div class="col-12 col-md-2 service">
-                    <h3>Web <br class="md-br">Design</h3>
-                </div>
-                <div class="col-12 col-md-2 service active">
+                <div class="col-12 col-md-2 service" id="mobapp">
                     <h3>Mobile <br class="md-br">Apps</h3>
                 </div>
-                <div class="col-12 col-md-2 service">
+                <div class="col-12 col-md-2 service" id="brands">
+                    <h3>Brand <br class="md-br">Identity</h3>
+                </div>
+                <div class="col-12 col-md-2 service active" id="webdev">
+                    <h3>Web <br class="md-br">Development</h3>
+                </div>
+                <div class="col-12 col-md-2 service" id="entapp">
                     <h3>Enterprise <br class="md-br">Apps</h3>
                 </div>
-                <div class="col-12 col-md-2 service">
+                <div class="col-12 col-md-2 service" id="events">
                     <h3>Events</h3>
                     <div class="spacer"></div>
                 </div>
-                <div class="col-12 col-md-2 service">
+                <div class="col-12 col-md-2 service" id="nonprof">
                     <h3>Non <br class="md-br">Profit</h3>
                 </div>
             </div>
@@ -166,7 +166,9 @@
     </div>
     <div class="container mb-md-50">
         <div class="row d-flex flex-column mobile-margins-services">
-            <div class="mb-50" id="serviceDescription"></div>
+            <div class="mb-50" id="serviceDescriptionContainer">
+                <p id="serviceDescription">The Codeero Group is your go-to partner for all your Web Development needs, with a large offering of services ranging from Websites, E-Commerce, Web Applications to Content Management and Distribution Systems. Each project is carefully crafted from the ground up, starting with the selection of the right technologies and tools to final optimizations, to make our solutions cost-effective, stunningly beautiful and blazingly fast. </p>
+            </div>
             <div class="switch-outline align-self-end">
                 <div class='wrap d-flex' onclick='toggleButton(this)'>
                     <div class="circleBG">
@@ -175,15 +177,56 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 mb-5">
             <div class="col no-padding-left">
-                <h3 class="extra-bold section-title title"> Our Companies</h3>
+                <h3 class="extra-bold section-title title"> OUR PROCESS</h3>
+            </div>
+        </div>
+        <div class="row mb-md-5">
+            <div class="col-12 col-md-3 d-flex flex-column">
+                <img src="img/process/meet.svg" class="align-self-center">
+                <p class="process-text">We meet with the client, determine project scope, requirements and details.</p>
+            </div>
+            <div class="col-12 col-md-1 d-flex justify-content-center">
+                <img src="img/process/arrow.svg" class="align-self-center arrow">
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column">
+                <img src="img/process/pm.svg">
+                <p class="process-text">Dedicated project manager is assigned, who will connect all parties involved (designers, coders, photographers, providers).</p>
+            </div>
+            <div class="col-12 col-md-1 d-flex justify-content-center">
+                <img src="img/process/arrow.svg" class="align-self-center arrow">
+            </div>
+            <div class="col-12 col-md-3 d-flex flex-column">
+                <img src="img/process/close.svg">
+                <p class="process-text">The PM works closely with the client and staff involved to create the first version of the experience.</p>
+            </div>
+        </div>
+        <div class="row mt-md-5">
+            <div class="col-12 col-md-2 d-flex justify-content-center">
+                <img src="img/process/arrow.svg" class="align-self-center arrow">
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column">
+                <img src="img/process/adjust.svg" class="minheight90">
+                <p class="process-text">The Experience is tuned and adjusted to fit the project needs perfectly.</p>
+            </div>
+            <div class="col-12 col-md-2 d-flex justify-content-center">
+                <img src="img/process/arrow.svg" class="align-self-center arrow">
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column">
+                <img src="img/process/prod.svg">
+                <p class="process-text">Experience is rolled out or opened up to the public.</p>
+            </div>
+        </div>
+        <div class="row mt-100">
+            <div class="col no-padding-left">
+                <h3 class="extra-bold section-title title"> OUR COMPANIES</h3>
             </div>
         </div>
         <div class="row mt-5 companyRow">
             <div class="col-12 col-md-8 d-flex flex-wrap justify-content-center justify-content-md-start no-padding-left">
                 <div class="scene mr-20">
-                    <div class="card" id="Codeero Development">
+                    <div class="card is-flipped" id="Codeero Development">
                         <div class="card__face card__face--front"><img src="img/companies/dev_white.svg" class="img-responsive companyLogo"></div>
                         <div class="card__face card__face--back activeCompany"><img src="img/companies/dev_color.svg" class="img-responsive companyLogo "></div>
                     </div>
@@ -201,7 +244,7 @@
                     </div>
                 </div>
                 <div class="scene">
-                    <div class="card is-flipped" id="Codeero Labs">
+                    <div class="card" id="Codeero Labs">
                         <div class="card__face card__face--front"><img src="img/companies/labs_white.svg" class="img-responsive companyLogo"></div>
                         <div class="card__face card__face--back activeCompany"><img src="img/companies/labs_color.svg" class="img-responsive companyLogo "></div>
                     </div>
@@ -210,8 +253,8 @@
             <style type="text/css">
             </style>
             <div class="col-12 col-md-4 d-flex flex-column">
-                <h2 class="extra-bold companyHeading no-padding-top mt-0 align-self-md-end" id="companyTitle"> Codeero Labs</h2>
-                <p class="companyDescription"> At the heart of all of our companies, we try to craft unique, beautiful and engaging experiences. Therefore, we strive to utilize innovative technologies and approaches to make our solutions easy to use, sustainable and intuitive.</p>
+                <h2 class="extra-bold companyHeading no-padding-top mt-0 align-self-md-end" id="companyTitle"> Codeero Development</h2>
+                <p class="companyDescription" id="companyDescription"> Codeero Development, the original branch of The Codeero Group, specializes in web and software development. The multinational, young and vibrant team serves clients of all sizes, from young startups, through small businesses to large multinational organizations. Codeero Development is your go-to partner for all your digital needs. </p>
                 <div class="switch-outline align-self-end">
                     <div class='wrap d-flex' onclick='toggleButton(this)'>
                         <div class="circleBG">
@@ -282,26 +325,23 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
-    let companyTitle = document.getElementById('companyTitle')
-    let dev, found, labs, events;
-    dev = document.getElementById('Codeero Development')
-    found = document.getElementById('Codeero Foundation')
-    labs = document.getElementById('Codeero Labs')
-    events = document.getElementById('Codeero Events')
-    let cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
+    function pasteDescritpion(id) {
 
-        card.addEventListener('click', function() {
-            dev.classList.remove('is-flipped')
-            found.classList.remove('is-flipped')
-            labs.classList.remove('is-flipped')
-            events.classList.remove('is-flipped')
-            card.classList.toggle('is-flipped');
-            console.log(card.id)
-            companyTitle.innerHTML = card.id;
-        });
-    })
+        let serviceDescription = document.getElementById('serviceDescription')
+        let serviceDescriptions = {
+            'webdev': "The Codeero Group is your go-to partner for all your Web Development needs, with a large offering of services ranging from Websites, E-Commerce, Web Applications to Content Management and Distribution Systems. Each project is carefully crafted from the ground up, starting with the selection of the right technologies and tools to final optimizations, to make our solutions cost-effective, stunningly beautiful and blazingly fast. ",
+            'brands': "No matter if you are just starting out or planning to rebrand your established business, The Codeero Group can help you with a full brand identity. Seasoned designers will work closely with you to craft a new logo that perfectly represents your company and vision, and further reinforce the Brand Identity with Stationary, Social Media Assets as well as a beautiful, comprehensive brand-guide to enable you to use your new brand to its fullest potential. ",
+            'mobapp': "The Codeero Group offers a wide array of digital solutions to businesses of all sizes, including custom, enterprise-grade software and applications, security solutions as well as set-up and customization of third-party applications.  Past projects have ranged from corporate travel-management and optimization software, through Throughput Optimization Applications for the Food and Restaurant industries, serving between only a few users to a few thousand. TCG strives to offer cost-efficiency and business-flow optimizations through AI Powered solutions and innovative approaches.  ",
+            'entapp': "Codeero Events, founded in 2015, strives to create professional, captivating and unforgettable events spanning a wide array of categories. With experience in Hackathons, Technical and Educational Workshops, Sporting Events and Corporate Celebrations, serving anyone from High Schoolers trough Senior Citizens, Codeero Events can help you make your occasion truly striking. ",
+            'events': "The Codeero Group specializes in a variety of events, including educational events, technical workshops, corporate celebrations as well as small- and large-scale sporting events. Through in-house events such as Hackathons, Let’s Code Cyprus and other event series, Codeero Events strives to help educate and inspire both our youth and senior citizens. Furthermore the firm aims to help everyone embrace the technological revolution and be passionate about STEM. Codeero Events can help you put on your tech event, no matter if its a Corporate Celebration, Workshop or Digital Event.",
+            'nonprof': "The Codeero Group, formerly known as Julo’s Development, started in 2014 as small, one-person business before growing to the company it is now. Knowing the challenges of starting and running a business, The Codeero Foundation offers heavily subsidized services (Web & Mobile Development, Branding, Design etc) to small and family run businesses and young entrepreneurs, to help get them online and establish an online presence at an affordable price. Find out more over at The Codeero Foundation."
+        }
+        serviceDescription.innerHTML = serviceDescriptions[id]
+
+
+    }
 
     let services = document.querySelectorAll('.service');
     services.forEach(service => {
@@ -310,98 +350,11 @@
                 notClicked.classList.remove('active')
             })
             service.classList.toggle('active')
+            console.log(service.id)
+            pasteDescritpion(service.id)
+
         })
     })
-
-    // Typing 
-
-
-    let typeDestination = document.getElementById('cet');
-    var i = 0;
-    var txt = 'Crafting experiences that ';
-    var speed = 150;
-
-    function typeOnce() {
-        if (i < txt.length) {
-            typeDestination.innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeOnce, speed);
-        } else {
-            setTimeout(function() {
-                typeDestination.classList.remove('ticked')
-
-                var elements = document.getElementsByClassName('txt-rotate');
-                for (var i = 0; i < elements.length; i++) {
-                    var toRotate = elements[i].getAttribute('data-rotate');
-                    var period = elements[i].getAttribute('data-period');
-                    if (toRotate) {
-                        new TxtRotate(elements[i], JSON.parse(toRotate), period);
-                    }
-                }
-
-            }, 150)
-
-        }
-    }
-
-
-    var TxtRotate = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtRotate.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-        var that = this;
-        var delta = 300 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 500;
-        }
-
-        setTimeout(function() {
-            that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-
-        setTimeout(() => {
-            typeDestination.classList.add('ticked')
-            typeOnce()
-        }, 8000);
-
-
-    };
-
-    function toggleButton(element) {
-        element.style.transform = 'translateX(62%)';
-        element.style.webkitTransform = 'translateX(62%)';
-        element.style.msTransform = 'translateX(62%)';
-        setTimeout(function() { window.location.href = 'https://www.codeero.com' }, 1000);
-    }
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
