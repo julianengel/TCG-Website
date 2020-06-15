@@ -20,7 +20,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-- Coming Soon
+## [1.0.3] - 2020-06-15
+### Added
+- Tracking with Plausible
+
 
 ## [1.0.2] - 2020-06-03
 ### Added
@@ -29,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Code Cleanup & Refactoring 
 - Added Comments 
+- Coming Soon
 
 
 ## [1.0.1] - 2020-06-02

@@ -1,7 +1,5 @@
 // TYPING - HEADER
 
-
-
 let typeDestination = document.getElementById('cet');
 var i = 0;
 var txt = 'Crafting experiences that ';
