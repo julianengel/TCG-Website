@@ -92,6 +92,10 @@
     .white {
         color: white;
     }
+    .white a{
+        color:white;
+        text-decoration: underline;
+    }
 
     .sed {
         font-family: 'Sedgwick Ave', cursive;
@@ -101,9 +105,13 @@
 
 <body>
     <div id="black" class="w-100 h-100 d-flex flex-column align-items-center justify-content-center container-fluid">
-        <h1 class="white sed">WE'LL BE RIGHT BACK</h1>
+        <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center container-fluid">
+                    <h1 class="white sed">WE'LL BE RIGHT BACK</h1>
         <h5 class="white">we're crafting a new experience for you</h5>
-        <p class="white"> Psst... in the meantime you can head over to <a href=-"www.instagram.com/thecodeerogroup">Instagram</a> to see what we're up to </p>
+        </div>
+        <div>
+        <p class="white" style="margin-top:auto; padding-bottom:10px;"> Psst... in the meantime you can head over to <a href="www.instagram.com/thecodeerogroup">Instagram</a> to see what we're up to.</p>
+        </div>
     </div>
 </body>
 
