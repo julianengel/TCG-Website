@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    function showInput () {
+    function showInput() {
         // Show the form and reminder only after the message is fully typed
         nameForm.style.opacity = 1;
         nameForm.style.display = 'block';
@@ -46,8 +46,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    function calcTime() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+        if (distance < 0) {
+            countdownElement.textContent = "Get Ready. Set. Go!";
+            return;
+        }
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        return `${days}d ${hours}h ${minutes}m`;
+
+    }
+
+
     function showGreeting() {
         message = `Hello ${nameInput.value.trim() || 'WebExplorer2000'}.`;
+        nameForm.display = "none"
+        intermediary_message = calcTime();
         type();
         setTimeout(() => deleteText(showTCGGreeting), 4000); // Show greeting for a bit before deleting
 
@@ -67,37 +84,24 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function showCountdown() {
-
         textElement.classList.remove('cursor'); // Stop blinking when typing
         textElement.classList.remove('blink'); // Stop blinking when typing
-        countdownElement.classList.add('cursor'); // Stop blinking when typing
-        countdownElement.classList.add('blink'); // Stop blinking when typing
-        typeElement = countdownElement
-        updateCountdown()
-            setInterval(deleteText, 60000, updateCountdown); // Update every minute
+        countdownElement.classList.add('cursor'); // Start blinking when typing
+        countdownElement.classList.add('blink'); // Start blinking when typing
+        typeElement = countdownElement;
 
+        updateCountdown(); // Immediately display the current countdown
 
-
+        // Set an interval to update the countdown every minute
+        setInterval(deleteText, 60000, updateCountdown);
     }
 
     function updateCountdown() {
-        console.log("Update")
-        const now = new Date().getTime();
-        const distance = targetDate - now;
-        if (distance < 0) {
-            countdownElement.textContent = "Get Ready. Set. Go!";
-            return;
-        }
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        message = `${days}d ${hours}h ${minutes}m`;
-        console.log(message)
-        console.log(message.length)
-        setTimeout(type, 3000); // Start after 3 seconds
-
+        typeElement = countdownElement; // Ensure countdownElement is targeted for typing
+        message = calcTime();
+        letterIndex = 0; // Reset letter index for typing effect
+        type(); // Start typing the updated message
     }
-
 
     nameForm.addEventListener('submit', function(event) {
         event.preventDefault();
