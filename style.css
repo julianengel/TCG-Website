@@ -53,6 +53,9 @@ html {
     opacity: 0;
 }
 
+.name-form input{
+    margin-bottom: 25px;
+}
 .name-form input,
 .name-form button {
     border: none;
@@ -85,4 +88,6 @@ html {
     font-size: 20px;
     color: white;
     margin-top: 120px;
+    white-space: nowrap;
+    /* Prevent wrapping to the next line */
 }
