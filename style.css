@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -24,18 +25,23 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
+    /* Prevent wrapping to the next line */
 }
 
-.cursor:after{
-    content:"";
+.cursor:after {
+    content: "";
     border-right: 2px solid white;
 }
-.cursor.blink:after{
-  animation: blink 1s step-end infinite;
+
+.cursor.blink:after {
+    animation: blink 1s step-end infinite;
 }
 
 @keyframes blink {
-    50% { border-color: transparent; }
+    50% {
+        border-color: transparent;
+    }
 }
 
 .name-form {
@@ -47,7 +53,8 @@ body, html {
     opacity: 0;
 }
 
-.name-form input, .name-form button {
+.name-form input,
+.name-form button {
     border: none;
     outline: none;
     padding: 10px;
