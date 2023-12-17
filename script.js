@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const nameInput = document.getElementById('nameInput');
     const reminderText = document.getElementById('reminder');
     const countdownElement = document.getElementById('countdown');
-    const targetDate = new Date("December 20, 2023 10:00:00").getTime();
+    const targetDate = new Date("December 28, 2023 10:00:00").getTime();
 
     let typeElement = textElement
     let cursorElement = document.getElementById('cursor');
