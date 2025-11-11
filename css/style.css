@@ -1,8 +1,14 @@
 /* BUILT-IN TAGS*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
+    line-height: 1.6;
+    color: #232323;
 }
 
 h1 {
@@ -17,9 +23,20 @@ a {
 
 /* NAVBAR */
 
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
 #nav-img {
     margin-top: 20px;
     max-height: 70px;
+    transition: transform 0.3s ease;
+}
+
+#nav-img:hover {
+    transform: scale(1.05);
 }
 
 .navbar-nav>li {
@@ -52,7 +69,8 @@ a {
 
 #grey-gradient {
     background: rgb(255, 255, 255);
-    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(240, 242, 245, 1) 50%, rgba(225, 230, 235, 1) 100%);
+    position: relative;
 }
 
 /* Mobile Nav*/
@@ -294,6 +312,19 @@ a {
 
 .section-title {
     text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, rgba(52, 106, 179, 1) 30%, rgba(54, 198, 245, 1) 90%);
+    border-radius: 2px;
 }
 
 .center-mob {
@@ -337,12 +368,19 @@ a {
 .switch-outline {
     height: 47px;
     width: 122px;
-    border: 1px solid rgba(54, 198, 245, 1);
+    border: 2px solid rgba(54, 198, 245, 1);
     border-radius: 50px;
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.switch-outline:hover {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
 }
 
 .learnMore {
@@ -392,8 +430,15 @@ a {
 #serviceDescriptionContainer {
     height: 550px;
     width: 100%;
-    background-color: rgb(228, 228, 228, 0.5);
-    border: 1px solid white;
+    background-color: rgb(255, 255, 255, 0.8);
+    border: 1px solid rgba(54, 198, 245, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#serviceDescriptionContainer:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 #serviceImage {
@@ -430,6 +475,12 @@ a {
     perspective: 600px;
     margin-bottom: 20px;
     background: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.scene:hover {
+    transform: translateY(-5px);
 }
 
 .companyLogo {
@@ -460,11 +511,14 @@ a {
 
 .card__face--front {
     background: #e4e4e4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .card__face--back {
     background: #ffffff;
     transform: rotateY(180deg);
+    border-radius: 8px;
 }
 
 .card.is-flipped {
@@ -477,9 +531,10 @@ a {
     background-color: white;
     border-width: 0px 0px 8px 0px;
     border-bottom: 8px solid;
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
     border-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='120px' height='61px' viewBox='0 0 120 61' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3ClinearGradient x1='13.652952%25' y1='41.1220114%25' x2='74.9269157%25' y2='54.7828394%25' id='linearGradient-1'%3E%3Cstop stop-color='%23346AB3' offset='0%25'%3E%3C/stop%3E%3Cstop stop-color='%2336C3F3' offset='88.8834716%25'%3E%3C/stop%3E%3Cstop stop-color='%2336C5F4' offset='100%25'%3E%3C/stop%3E%3Cstop stop-color='%2336C5F4' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Crect id='Rectangle' fill='url(%23linearGradient-1)' fill-rule='nonzero' x='0' y='0' width='120' height='61'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E") 25%;
 
 }
@@ -507,6 +562,45 @@ a {
     padding-bottom: 30px;
 }
 
+/* Company name text styles for SimpleBytes and Domain Details */
+.company-name-text {
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #232323;
+    margin: 0;
+    padding: 10px;
+}
+
+.company-name-text-active {
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-align: center;
+    background: rgb(52, 106, 179);
+    background: linear-gradient(135deg, rgba(52, 106, 179, 1) 30%, rgba(54, 198, 245, 1) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Company link styles for SEO optimization */
+.company-link {
+    color: #346AB3;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.company-link:hover {
+    color: #36C3F3;
+    text-decoration: underline;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 /* FOOTER */
 
 #map {
@@ -516,12 +610,17 @@ a {
 
 
 .footer {
-    background-color: #e4e4e4;
+    background: linear-gradient(180deg, rgba(228, 228, 228, 1) 0%, rgba(215, 215, 215, 1) 100%);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
 }
 
 .footer h2 {
     font-weight: 800;
- 
+    background: rgb(52, 106, 179);
+    background: linear-gradient(135deg, rgba(52, 106, 179, 1) 30%, rgba(54, 198, 245, 1) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Contact Row */

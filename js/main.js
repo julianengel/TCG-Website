@@ -109,11 +109,20 @@ services.forEach(service => {
 let companyTitle = document.getElementById('companyTitle')
 let dev, found, labs, events;
 
-let companyDescriptions = { 'Codeero Development': "Codeero Development, the original branch of The Codeero Group, specializes in web and software development. The multinational, young and vibrant team serves clients of all sizes, from young startups, through small businesses to large multinational organizations. Codeero Development is your go-to partner for all your digital needs. ", 'Codeero Foundation': "The Codeero Foundation, established in 2016 as the GAF, strives to give back to the community and support local businesses. To support up and coming students, small, family run businesses and other non-profit organizations, The Codeero Foundation provides all of The Codeero Group’s s services at a heavily discounted price, making getting online easy and affordable.   ", 'Codeero Labs': "Codeero Labs is the newest member of The Codeero Group. The Lab focuses on releasing consumer facing “Experiments”, through the form of websites, applications and other online experiences.  Those Experiments range from explorations of innovative technologies through new ways of education and art installations. ", 'Codeero Events': "Codeero Events, founded in 2015, strives to create professional, captivating and unforgettable events spanning a wide array of categories. With experience in Hackathons, Technical and Educational Workshops, Sporting Events and Corporate Celebrations, serving anyone from High Schoolers trough Senior Citizens, Codeero Events can help you make your occasion truly striking. " }
+let companyDescriptions = {
+    'Codeero Development': "Codeero Development, the original branch of The Codeero Group, specializes in web and software development. The multinational, young and vibrant team serves clients of all sizes, from young startups, through small businesses to large multinational organizations. Codeero Development is your go-to partner for all your digital needs.",
+    'Codeero Foundation': "The Codeero Foundation, established in 2016 as the GAF, strives to give back to the community and support local businesses. To support up and coming students, small, family run businesses and other non-profit organizations, The Codeero Foundation provides all of The Codeero Group's services at a heavily discounted price, making getting online easy and affordable.",
+    'Codeero Labs': "Codeero Labs is the newest member of The Codeero Group. The Lab focuses on releasing consumer facing "Experiments", through the form of websites, applications and other online experiences. Those Experiments range from explorations of innovative technologies through new ways of education and art installations.",
+    'Codeero Events': "Codeero Events, founded in 2015, strives to create professional, captivating and unforgettable events spanning a wide array of categories. With experience in Hackathons, Technical and Educational Workshops, Sporting Events and Corporate Celebrations, serving anyone from High Schoolers through Senior Citizens, Codeero Events can help you make your occasion truly striking.",
+    'SimpleBytes': "SimpleBytes is a dynamic subsidiary of The Codeero Group, specializing in innovative digital solutions and premium domain services. With a focus on delivering streamlined, efficient technology products, SimpleBytes bridges the gap between enterprise-grade capabilities and user-friendly experiences. Visit <a href='https://simplebytes.com' rel='dofollow' target='_blank' class='company-link'>SimpleBytes.com</a> to learn more about our cutting-edge solutions.",
+    'Domain Details': "Domain Details is a premium brand of SimpleBytes, offering comprehensive domain name services including registration, management, and marketplace solutions. Whether you're looking to secure the perfect domain for your brand or explore premium domain opportunities, Domain Details provides expert guidance and powerful tools. Discover premium domains at <a href='https://domaindetails.com' rel='dofollow' target='_blank' class='company-link'>DomainDetails.com</a>."
+}
 dev = document.getElementById('Codeero Development')
 found = document.getElementById('Codeero Foundation')
 labs = document.getElementById('Codeero Labs')
 events = document.getElementById('Codeero Events')
+let simplebytes = document.getElementById('SimpleBytes')
+let domaindetails = document.getElementById('Domain Details')
 let companyDescription = document.getElementById('companyDescription')
 let cards = document.querySelectorAll('.card');
 cards.forEach(card => {
@@ -123,6 +132,8 @@ cards.forEach(card => {
         found.classList.remove('is-flipped')
         labs.classList.remove('is-flipped')
         events.classList.remove('is-flipped')
+        simplebytes.classList.remove('is-flipped')
+        domaindetails.classList.remove('is-flipped')
         card.classList.toggle('is-flipped');
         console.log(card.id)
         companyTitle.innerHTML = card.id;
