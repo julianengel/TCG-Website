@@ -1,242 +1,427 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Codeero Group Ecosystem | Innovative Companies & Brands</title>
-    <meta name="description" content="Explore The Codeero Group's ecosystem of innovative companies and brands, including a creative agency, Mineo Minerals, and GBCenter. Discover our portfolio dedicated to digital experiences, pet wellness, and business solutions.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
+    <!-- Primary Meta Tags -->
+    <title>The Codeero Group | Crafting Experiences | Domain Details & SimpleBytes</title>
+    <meta name="title" content="The Codeero Group | Crafting Experiences | Domain Details & SimpleBytes">
+    <meta name="description" content="The Codeero Group is your go-to partner for digital and event experiences. Our portfolio includes SimpleBytes and Domain Details for premium domain services, alongside web development, mobile apps, and enterprise solutions.">
+    <meta name="keywords" content="domain names, domain details, simplebytes, web development, mobile apps, enterprise applications, event management, brand identity">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.codeero.com/">
+    <meta property="og:title" content="The Codeero Group | Crafting Experiences | Domain Details & SimpleBytes">
+    <meta property="og:description" content="The Codeero Group is your go-to partner for digital and event experiences. Our portfolio includes SimpleBytes and Domain Details for premium domain services, alongside web development, mobile apps, and enterprise solutions.">
+    <meta property="og:image" content="img/socialheader.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.codeero.com/">
+    <meta property="twitter:title" content="The Codeero Group | Crafting Experiences | Domain Details & SimpleBytes">
+    <meta property="twitter:description" content="The Codeero Group is your go-to partner for digital and event experiences. Our portfolio includes SimpleBytes and Domain Details for premium domain services, alongside web development, mobile apps, and enterprise solutions.">
+    <meta property="twitter:image" content="img/socialheader.png">
+    <script async defer data-domain="codeero.com" src="https://plausible.io/js/plausible.js"></script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "The Codeero Group",
+        "description": "Digital and event experiences company with subsidiaries including SimpleBytes and Domain Details",
+        "image": "https://www.codeero.com/img/socialheader.png",
+        "@id": "https://www.codeero.com",
+        "url": "https://www.codeero.com",
+        "telephone": "+35725000095",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Agias Zonis 1, Office 607A",
+            "addressLocality": "Limassol",
+            "postalCode": "3025",
+            "addressCountry": "CY"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+        },
+        "sameAs": [
+            "https://www.facebook.com/thecodeerogroup",
+            "https://www.instagram.com/thecodeerogroup",
+            "https://github.com/thecodeerogroup"
+        ],
+        "subOrganization": [
+            {
+                "@type": "Organization",
+                "name": "SimpleBytes",
+                "url": "https://simplebytes.com",
+                "description": "Subsidiary of The Codeero Group specializing in digital solutions and domain services"
+            },
+            {
+                "@type": "Organization",
+                "name": "Domain Details",
+                "url": "https://domaindetails.com",
+                "description": "Premium domain name services, a brand of SimpleBytes"
+            },
+            {
+                "@type": "Organization",
+                "name": "Codeero Development",
+                "description": "Web and software development services"
+            },
+            {
+                "@type": "Organization",
+                "name": "Codeero Foundation",
+                "description": "Non-profit services for small businesses and entrepreneurs"
+            },
+            {
+                "@type": "Organization",
+                "name": "Codeero Events",
+                "description": "Professional event planning and management"
+            },
+            {
+                "@type": "Organization",
+                "name": "Codeero Labs",
+                "description": "Experimental consumer-facing digital experiences"
+            }
+        ]
     }
-
-    h1,
-    h2,
-    h3,
-    h4 {
-        color: #2c3e50;
-    }
-
-    .company {
-        margin-bottom: 40px;
-        border: 1px solid #eee;
-        padding: 20px;
-        border-radius: 5px;
-    }
-
-    .brand {
-        margin-left: 20px;
-        margin-bottom: 20px;
-        padding: 10px;
-        background-color: #f9f9f9;
-        border-radius: 5px;
-    }
-
-    .logo {
-        max-width: 200px;
-        height: auto;
-    }
-
-    .founder-director {
-        font-style: italic;
-        margin-top: 10px;
-    }
-
-    a {
-        color: #3498db;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    .company-type {
-        font-weight: bold;
-        color: #e74c3c;
-        margin-bottom: 10px;
-    }
-
-    .social-links {
-        margin-top: 15px;
-    }
-
-    .social-links a {
-        display: inline-block;
-        margin-right: 15px;
-        color: #3498db;
-        text-decoration: none;
-    }
-
-    .social-links a:hover {
-        color: #2980b9;
-    }
-
-    .fa-icon {
-        margin-right: 5px;
-    }
-    </style>
-    <script type="text/javascript" defer data-domain="codeero.com" src="https://analytics.codeero.com/js/script.js"></script>
+    </script>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Codeero">
+    <meta name="application-name" content="Codeero">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="img/favicon/android-icon-384x384.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script defer data-domain="codeero.com" src="http://analytics.codeero.com/js/script.js"></script>
 </head>
-<header>
-    <h1>The Codeero Group Ecosystem</h1>
-    <p>An in-depth look at The Codeero Group's companies and brands, spanning creative services, pet wellness, and innovative business solutions.</p>
-</header>
-<main>
-    <section class="company" id="meome">
-        <div class="company-type">Parent Company</div>
-        <h2>meome</h2>
-        <img src="https://www.codeero.com/img/logo/tcg.png" alt="The Codeero Group Logo" class="logo">
-        <p><strong>Founded:</strong> 2025</p>
-        <p>meome - creating companies and brands that matter is the new parent company to all companies, brands and projects and investments of the former The Codeero Group.</p>
-        <p class="founder-director">Founder: <a href="https://www.julianengel.com" target="_blank" rel="noopener noreferrer">Julian Engel</a></p>
-        <p>Website: <a href="https://meome.com" target="_blank" rel="noopener noreferrer">www.meome.com</a></p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/company/meome" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-icon"></i>LinkedIn</a>
-        </div>
-    </section>
-    <section class="company" id="codeero-group">
-        <div class="company-type">Group Holding Company</div>
-        <h2>The Codeero Group</h2>
-        <img src="https://www.codeero.com/img/logo/tcg.png" alt="The Codeero Group Logo" class="logo">
-        <p><strong>Founded:</strong> 2014</p>
-        <p>The Codeero Group is a dynamic creative agency that has evolved significantly since its inception. Originally established as Julo's Development by Julian Engel, the company rebranded in 2019 to reflect its expanded services and growing influence in the digital landscape. With a focus on innovation and client satisfaction, The Codeero Group has become a leader in providing comprehensive digital solutions.</p>
-        <p>The group's expertise spans across various domains, including:</p>
-        <ul>
-            <li>Web and mobile application development</li>
-            <li>Branding and digital marketing strategies</li>
-            <li>User experience (UX) and user interface (UI) design</li>
-            <li>Event planning and execution for both virtual and physical spaces</li>
-            <li>Technology-driven educational and community development initiatives</li>
-        </ul>
-        <p>The Codeero Group operates through three specialized divisions:</p>
-        <ol>
-            <li><strong>Codeero Development:</strong> This division is at the forefront of technological innovation, focusing on creating robust, scalable web and mobile applications. The team employs cutting-edge technologies and best practices in software development to deliver solutions that drive business growth and enhance user engagement.</li>
-            <li><strong>Codeero Events:</strong> Specializing in event planning and execution, this division bridges the gap between digital and physical experiences. From corporate conferences to product launches, Codeero Events crafts memorable occasions that align with clients' branding and objectives.</li>
-            <li><strong>Codeero Foundation:</strong> As the group's philanthropic arm, the Codeero Foundation is dedicated to leveraging technology for social good. It supports education and community development through innovative, tech-driven initiatives, aiming to bridge the digital divide and empower communities.</li>
-        </ol>
-        <p>Since 2021, The Codeero Group has actively diversified its portfolio, venturing into new markets and industries. This expansion reflects the group's commitment to staying at the forefront of digital innovation and its ability to adapt to evolving market needs. By fostering a culture of creativity and continuous learning, The Codeero Group consistently delivers solutions that combine technical excellence with strategic insight.</p>
-        <p class="founder-director">Founder: <a href="https://www.julianengel.com" target="_blank" rel="noopener noreferrer">Julian Engel</a></p>
-        <p>Website: <a href="https://www.codeero.com" target="_blank" rel="noopener noreferrer">www.codeero.com</a></p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/thecodeerogroup" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-icon"></i>Facebook</a>
-            <a href="https://www.instagram.com/thecodeerogroup" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-icon"></i>Instagram</a>
-            <a href="https://www.youtube.com/@thecodeerogroup" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube fa-icon"></i>YouTube</a>
-            <a href="https://www.linkedin.com/company/thecodeerogroup" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-icon"></i>LinkedIn</a>
-            <a href="https://x.com/thecodeerogroup" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter fa-icon"></i>x (ex Twitter)</a>
-        </div>
-    </section>
-    <section class="company" id="mineo-minerals">
-        <div class="company-type">Subsidiary</div>
-        <h2>Mineo Minerals</h2>
-        <img src="https://www.codeero.com/img/logo/mineo.png" alt="Mineo Minerals Logo" class="logo">
-        <p><strong>Founded:</strong> 2021</p>
-        <p>Mineo Minerals, headquartered in Cyprus, is a cutting-edge research and development company at the forefront of natural pet wellness solutions. Founded with the vision of revolutionizing pet care through science-backed, nature-inspired products, Mineo has quickly established itself as a pioneer in the industry.</p>
-        <p>The company's core strengths lie in its innovative approach to product development:</p>
-        <ul>
-            <li><strong>Scientific Rigor:</strong> Mineo employs a team of experienced researchers and veterinary experts who work collaboratively to uncover the potential of natural ingredients for pet health.</li>
-            <li><strong>Sustainability Focus:</strong> All product development at Mineo is underpinned by a commitment to environmental responsibility, ensuring that the benefits for pets don't come at a cost to the planet.</li>
-            <li><strong>Quality Control:</strong> Rigorous testing and quality assurance processes are in place to ensure that every product meets the highest standards of safety and efficacy.</li>
-            <li><strong>Innovation Pipeline:</strong> Mineo maintains an active research program, continually exploring new natural compounds and their potential applications in pet wellness.</li>
-        </ul>
-        <p>As the driving force behind the Nutrified brand, Mineo Minerals is responsible for developing groundbreaking products like the Pure Goodness line. This includes the popular Happy Tummies supplement, which utilizes natural zeolite for digestive health, and the innovative Healthy Minds oil, which harnesses the benefits of CBD for pet cognitive support.</p>
-        <p>Looking to the future, Mineo Minerals has ambitious plans for expansion across Europe. This growth strategy aims to bring its innovative pet wellness solutions to a broader market, while also tapping into diverse research talent and natural resources across the continent.</p>
-        <p class="founder-director">Founder: <a href="https://www.nataliakawa.com" target="_blank" rel="noopener noreferrer">Natalia Kawa</a></p>
-        <p class="founder-director">Director: <a href="https://www.julianengel.com" target="_blank" rel="noopener noreferrer">Julian Engel</a></p>
-        <p>Website: <a href="https://www.mineo.cy" target="_blank" rel="noopener noreferrer">www.mineo.cy</a></p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/company/mineo" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-icon"></i>LinkedIn</a>
-            <a href="https://www.instagram.com/mineo.cy" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-icon"></i>Instagram</a>
-            <a href="https://www.facebook.com/mineo.cy" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-icon"></i>Facebook</a>
-        </div>
-        <h3>Brands under Mineo Minerals:</h3>
-        <div class="brand" id="nutrified">
-            <h4>Nutrified</h4>
-            <img src="https://www.codeero.com/img/logo/nutrified.png" alt="Nutrified Logo" class="logo">
-            <p>Nutrified stands at the forefront of the natural pet wellness movement, offering a range of innovative, science-backed products designed to enhance the health and happiness of pets. Born from a deep-seated love for animals and a commitment to their wellbeing, Nutrified has quickly become a trusted name among pet parents who prioritize natural, sustainable solutions for their furry companions.</p>
-            <p>The brand's flagship Pure Goodness line exemplifies Nutrified's dedication to harnessing the power of nature for pet health. Products like Happy Tummies, a 100% natural zeolite supplement, target specific aspects of pet wellness such as digestive health. Meanwhile, the Healthy Minds oil, infused with carefully sourced CBD, supports cognitive function and overall wellbeing in pets.</p>
-            <p>What sets Nutrified apart is its unwavering commitment to quality and transparency. Every product is the result of extensive research and development by Mineo Minerals, ensuring that it not only meets but exceeds the expectations of discerning pet owners. The brand's ethos of "Only The Best Nature Has To Offer" is reflected in every aspect of its operations, from ingredient sourcing to packaging choices.</p>
-            <p>Website: <a href="https://www.nutrified.com" target="_blank" rel="noopener noreferrer">www.nutrified.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/nutrified.vet" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-icon"></i>Facebook</a>
-                <a href="https://www.instagram.com/nutrified.vet" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-icon"></i>Instagram</a>
-                <a href="https://x.com/nutrified_vet" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter fa-icon"></i>x (ex Twitter)</a>
-                <a href="https://www.youtube.com/@nutrified_vet" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube fa-icon"></i>YouTube</a>
-                <a href="https://www.linkedin.com/company/nutrified" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-icon"></i>LinkedIn</a>
+
+<body>
+    <div id="grey-gradient">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="../">
+                    <img src="../img/horizontal.svg" id="nav-img" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mainNav" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../comingsoon">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../comingsoon">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../comingsoon">EVENTS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../comingsoon" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                OUR COMPANIES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" id="noTopBorder" href="../comingsoon">Development</a>
+                                <a class="dropdown-item" href="../comingsoon">Foundation</a>
+                                <a class="dropdown-item" href="../comingsoon">Events</a>
+                                <a class="dropdown-item" href="../comingsoon">Labs</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../comingsoon">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Animation Container -->
+        <div class="container">
+            <div class="row flex-md-row-reverse" id="animationPlaceHolder">
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-md-center align-items-center align-items-md-end">
+                    <!-- Animation, First White Lines (logo_animated) than color fade in (logo_animated_color) -->
+                    <div id="logoAnimation" class="mt-5 mt-md-0">
+                        <object>
+                            <embed src="../img/logo_animated.svg" class="fade-out outlined"> </embed>
+                        </object>
+                        <object>
+                            <embed src="../img/logo_animated_color.svg" class="fade-in color"> </embed>
+                        </object>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-md-center">
+                    <!-- Mission Statement Typing with JS -->
+                    <!-- Crafting Experiences That <br> - Connect - Inspire - Captivate - Educate -->
+                    <div style="min-height: 400px;" class="mt-5 d-flex align-items-lg-center">
+                        <h2 class="typingText"><span id="cet" class=""></span> <br>
+                            <span class="txt-rotate" data-period="2000" data-rotate='[ "connect.", " educate.", " inspire.", "captivate." ]' style="text-decoration: underline;"></span>
+                        </h2>
+                    </div>
+                    <!-- No JS alternative -->
+                    <noscript>
+                        <h2 class="typingText mt-5">Crafting Experiences For Digital and Offline</h2>
+                    </noscript>
+                </div>
             </div>
         </div>
-        <div class="brand" id="ampawssadors">
-            <h4>Ampawssadors</h4>
-            <img src="https://www.codeero.com/img/logo/ampawssadors.png" alt="Ampawssadors Logo" class="logo">
-            <p>The Ampawssadors program is a unique and integral part of the Nutrified brand, embodying the company's commitment to community engagement and real-world product validation. This innovative initiative transforms everyday pets into brand ambassadors, creating a vibrant network of furry advocates for Nutrified's natural wellness solutions.</p>
-            <p>At its core, the Ampawssadors program is about celebrating the diverse stories of pets and their owners who have embraced the Nutrified lifestyle. These four-legged ambassadors come from all walks of life, representing a wide range of breeds, sizes, and personalities. Their experiences with Nutrified products are shared across various platforms, providing authentic testimonials that resonate with pet owners worldwide.</p>
-            <p>The program goes beyond mere marketing, playing a crucial role in Nutrified's product development process. Ampawssadors and their owners provide valuable feedback on existing products and participate in trials for new formulations. This real-world testing ensures that Nutrified's offerings are not just scientifically sound but also practical and effective in day-to-day use.</p>
-            <p>Ampawssadors are featured prominently in Nutrified's marketing materials, from social media content to product packaging. The program also includes special events, such as the popular Ampawssador Cat Walk, where these furry celebrities strut their stuff on the red carpet, creating engaging experiences for pet owners and generating buzz around the brand.</p>
-            <p>Website: <a href="https://www.ampawssadors.com" target="_blank" rel="noopener noreferrer">www.ampawssadors.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/ampawssadors" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-icon"></i>Facebook</a>
-                <a href="https://www.instagram.com/ampawssadors" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-icon"></i>Instagram</a>
-                <a href="https://x.com/ampawssadors" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter fa-icon"></i>x (ex Twitter)</a>
-        </div>
-        </div>
-        <div class="brand" id="tinypaws">
-            <h4>TinyPaws</h4>
-            <img src="https://www.codeero.com/img/logo/tinypaws.png" alt="TinyPaws Logo" class="logo">
-            <p>TinyPaws represents Nutrified's exciting venture into specialized care for the smallest and youngest members of the pet community. Set to launch in early 2025, TinyPaws is poised to revolutionize the approach to nutrition and wellness for puppies, kittens, and other small pets.</p>
-            <p>This innovative product line is being developed with a deep understanding that the early stages of a pet's life are crucial for their long-term health and wellbeing. TinyPaws will offer a range of products specifically formulated to support the unique needs of growing animals, from their developing digestive systems to their blossoming cognitive functions.</p>
-            <p>In line with Nutrified's core values, TinyPaws will maintain an unwavering commitment to natural, sustainable ingredients. The product development team at Mineo Minerals is working diligently to create formulations that provide optimal nutrition without compromising on the brand's dedication to purity and environmental responsibility.</p>
-            <p>While specific product details are still under wraps, pet owners can expect a comprehensive range of supplements, foods, and care items designed to give young pets the best possible start in life. The TinyPaws line promises to combine cutting-edge nutritional science with Nutrified's signature focus on natural, wholesome ingredients.</p>
-            <p>Websites: <a href="https://www.tinypaws.com" target="_blank" rel="noopener noreferrer">www.tinypaws.com</a>, <a href="https://www.tinypaws.app" target="_blank" rel="noopener noreferrer">www.tinypaws.app</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/https://www.facebook.com/tinypaws.apps" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-icon"></i>Facebook</a>
-                <a href="https://www.instagram.com/tinypaws.app" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-icon"></i>Instagram</a>
-                <a href="https://x.com/tinypaws_app" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter fa-icon"></i>x (ex Twitter)</a>
+        <!-- Our Services Section -->
+        <div class="container mt-desktop">
+            <!-- Custom Tabs -->
+            <div class="row">
+                <div class="col no-padding-left">
+                    <h3 class="extra-bold mb-50 title">OUR SERVICES</h3>
+                </div>
+            </div>
+            <div class="row mobile-margins-services" id="serviceContainer">
+                <div class="col-12 col-md-2 service" id="mobapp">
+                    <h3>Mobile <br class="md-br">Apps</h3>
+                </div>
+                <div class="col-12 col-md-2 service" id="brands">
+                    <h3>Brand <br class="md-br">Identity</h3>
+                </div>
+                <div class="col-12 col-md-2 service active" id="webdev">
+                    <h3>Web <br class="md-br">Development</h3>
+                </div>
+                <div class="col-12 col-md-2 service" id="entapp">
+                    <h3>Enterprise <br class="md-br">Apps</h3>
+                </div>
+                <div class="col-12 col-md-2 service" id="events">
+                    <h3>Events</h3>
+                    <div class="spacer"></div>
+                </div>
+                <div class="col-12 col-md-2 service" id="nonprof">
+                    <h3>Non <br class="md-br">Profit</h3>
+                </div>
             </div>
         </div>
-    </section>
-    <section class="company" id="gbcenter">
-        <div class="company-type">Subsidiary</div>
-        <h2>GBCenter</h2>
-        <img src="https://www.codeero.com/img/logo/gbcenter.png" alt="GBCenter Logo" class="logo">
-        <p><strong>Founded:</strong> 1997</p>
-        <p><strong>Acquired:</strong> 2021</p>
-        <p>GBCenter, strategically located in the heart of Limassol, Cyprus, represents a pioneering concept in comprehensive office solutions. With a rich history dating back to 1997 and a transformative acquisition by The Codeero Group in 2021, GBCenter has evolved into a state-of-the-art business hub that caters to the diverse needs of modern enterprises.</p>
-        <p>Following its acquisition, GBCenter underwent a complete overhaul and renovation, emerging as a cutting-edge facility that seamlessly blends technology, sustainability, and functionality. This rejuvenation has positioned GBCenter at the forefront of the office solutions sector in Cyprus and the wider Mediterranean region.</p>
-        <p>Key features that set GBCenter apart include:</p>
-        <ul>
-            <li><strong>Smart Office Infrastructure:</strong> The center boasts advanced automation systems for lighting, climate control, and security. These smart features not only enhance the comfort and productivity of occupants but also contribute to significant energy savings.</li>
-            <li><strong>Cutting-Edge Technology:</strong> GBCenter is equipped with state-of-the-art technology, including high-speed fiber-optic internet, advanced videoconferencing systems, and smart collaborative spaces. This technological backbone ensures that businesses operating from GBCenter have access to the tools they need to compete in the global marketplace.</li>
-            <li><strong>Superior Connectivity:</strong> Understanding the critical importance of seamless communication in today's business world, GBCenter offers robust connectivity solutions. The infrastructure supports seamless integration of devices and cloud services, enabling businesses to stay connected and productive at all times.</li>
-            <li><strong>Sustainability Focus:</strong> In line with growing environmental concerns, GBCenter has implemented a range of energy-efficient systems and sustainable practices. From smart energy management to eco-friendly materials, the center is committed to minimizing its environmental footprint while providing a healthier workspace for its occupants.</li>
-        </ul>
-        <p>Beyond its physical attributes, GBCenter distinguishes itself through a comprehensive range of business services, including:</p>
-        <ul>
-            <li>Company incorporation and structuring</li>
-            <li>Ongoing company management and administration</li>
-            <li>Accounting and financial reporting services</li>
-            <li>Legal consultation and compliance support</li>
-            <li>Banking liaison and financial services coordination</li>
-        </ul>
-        <p>This holistic approach allows GBCenter to cater to businesses of all sizes, from startups looking for their first professional address to established corporations seeking a strategic base in Cyprus. The center's team of dedicated specialists works closely with each client to provide tailored solutions that meet their specific needs and objectives.</p>
-        <p>As part of The Codeero Group ecosystem, GBCenter benefits from synergies with other group companies, particularly in areas of technology integration and digital transformation. This connection allows GBCenter to stay at the cutting edge of office technology trends and continuously evolve its offerings to meet the changing needs of the business community.</p>
-        <p>In essence, GBCenter is more than just an office space provider; it's a partner in business growth and innovation. By offering a blend of advanced infrastructure, comprehensive services, and a supportive business environment, GBCenter plays a crucial role in fostering entrepreneurship and economic development in Cyprus and beyond.</p>
-        <p class="founder-director">Director: <a href="https://www.gpap.cy" target="_blank" rel="noopener noreferrer">Georgia Papadopolou</a></p>
-        <p>Website: <a href="https://www.gbcenter.com" target="_blank" rel="noopener noreferrer">www.gbcenter.com</a></p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/company/gbcenter" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-icon"></i>LinkedIn</a>
+    </div>
+    <div class="container mb-md-50">
+        <!-- Description and Text -->
+        <div class="row d-flex flex-column mobile-margins-services">
+            <div class="mb-50 d-flex" id="serviceDescriptionContainer">
+                <!-- Image on Tablet and Up, Hidden on Mobile -->
+                <div class="d-none d-md-flex col-5 align-items-center justify-content-center">
+                    <img src="../img/services/webdev.png" id="serviceImage">
+                </div>
+                <div class="col-12 col-md-7 d-flex align-items-center justify-content-center">
+                    <p id="serviceDescription" style="font-size: 1.2rem">The Codeero Group is your go-to partner for all your Web Development needs, with a large offering of services ranging from Websites, E-Commerce, Web Applications to Content Management and Distribution Systems. Each project is carefully crafted from the ground up, starting with the selection of the right technologies and tools to final optimizations, to make our solutions cost-effective, stunningly beautiful and blazingly fast. </p>
+                </div>
+            </div>
+            <!-- Toggle Button -->
+            <div class="switch-outline align-self-end">
+                <div class='wrap d-flex' onclick='toggleButton(this)'>
+                    <div class="circleBG">
+                    </div>
+                    <span class='learnMore'>Contact Us</span>
+                </div>
+            </div>
         </div>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2024 The Codeero Group. All rights reserved. Mineo, Nutrified, and Ampawssadors are registered trademarks of The Codeero Group and Mineo Minerals.</p>
-</footer>
+        <!-- Our Process Section -->
+        <div class="row mt-5 mb-5">
+            <div class="col no-padding-left">
+                <h3 class="extra-bold section-title title"> OUR PROCESS</h3>
+            </div>
+        </div>
+        <div class="row mb-md-5">
+            <div class="col-12 col-md-3 d-flex flex-column">
+                <img src="../img/process/meet.svg" class="align-self-center">
+                <p class="process-text">During the first meeting, project scope, requirements and details are determined.</p>
+            </div>
+            <div class="col-12 col-md-1 d-flex justify-content-center">
+                <img src="../img/process/arrow.svg" class="align-self-center arrow">
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column">
+                <img src="../img/process/pm.svg">
+                <p class="process-text">A dedicated project manager is assigned, who will connect all parties involved (designers, coders, photographers, providers).</p>
+            </div>
+            <div class="col-12 col-md-1 d-flex justify-content-center">
+                <img src="../img/process/arrow.svg" class="align-self-center arrow">
+            </div>
+            <div class="col-12 col-md-3 d-flex flex-column">
+                <img src="../img/process/close.svg">
+                <p class="process-text">The PM works closely with the partner and staff involved to create the first version of The Experience.</p>
+            </div>
+        </div>
+        <div class="row mt-md-5">
+            <div class="col-12 col-md-2 d-flex justify-content-center">
+                <img src="../img/process/arrow.svg" class="align-self-center arrow">
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column">
+                <img src="../img/process/adjust.svg" class="minheight90">
+                <p class="process-text">The Experience is tuned and adjusted to fit the project needs perfectly.</p>
+            </div>
+            <div class="col-12 col-md-2 d-flex justify-content-center">
+                <img src="../img/process/arrow.svg" class="align-self-center arrow">
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column">
+                <img src="../img/process/prod.svg">
+                <p class="process-text">The Experience is rolled out. The Partner receives ongoing support.</p>
+            </div>
+        </div>
+        <!-- Our Companies - Cards -->
+        <div class="row mt-100">
+            <div class="col no-padding-left">
+                <h3 class="extra-bold section-title title"> OUR COMPANIES</h3>
+            </div>
+        </div>
+        <!-- CSS mostly, is-flipped class turns the card, added via event listener. -->
+        <div class="row mt-5 companyRow">
+            <div class="col-12 col-md-8 d-flex flex-wrap justify-content-center justify-content-md-start no-padding-left">
+                <div class="scene mr-20 mb-20">
+                    <div class="card is-flipped" id="Codeero Development">
+                        <div class="card__face card__face--front"><img src="../img/companies/dev_white.svg" class="img-responsive companyLogo"></div>
+                        <div class="card__face card__face--back activeCompany"><img src="../img/companies/dev_color.svg" class="img-responsive companyLogo "></div>
+                    </div>
+                </div>
+                <div class="scene mb-20">
+                    <div class="card" id="Codeero Foundation">
+                        <div class="card__face card__face--front"><img src="../img/companies/foundation_white.svg" class="img-responsive companyLogo"></div>
+                        <div class="card__face card__face--back activeCompany"><img src="../img/companies/foundation_color.svg" class="img-responsive companyLogo "></div>
+                    </div>
+                </div>
+                <div class="scene mr-20 mb-20">
+                    <div class="card" id="Codeero Events">
+                        <div class="card__face card__face--front"><img src="../img/companies/events_white.svg" class="img-responsive companyLogo"></div>
+                        <div class="card__face card__face--back activeCompany"><img src="../img/companies/events_color.svg" class="img-responsive companyLogo "></div>
+                    </div>
+                </div>
+                <div class="scene mb-20">
+                    <div class="card" id="Codeero Labs">
+                        <div class="card__face card__face--front"><img src="../img/companies/labs_white.svg" class="img-responsive companyLogo"></div>
+                        <div class="card__face card__face--back activeCompany"><img src="../img/companies/labs_color.svg" class="img-responsive companyLogo "></div>
+                    </div>
+                </div>
+                <div class="scene mr-20 mb-20">
+                    <div class="card" id="SimpleBytes">
+                        <div class="card__face card__face--front">
+                            <div class="companyLogo d-flex align-items-center justify-content-center h-100">
+                                <h3 class="company-name-text">SimpleBytes</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back activeCompany">
+                            <div class="companyLogo d-flex align-items-center justify-content-center h-100">
+                                <h3 class="company-name-text-active">SimpleBytes</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene mb-20">
+                    <div class="card" id="Domain Details">
+                        <div class="card__face card__face--front">
+                            <div class="companyLogo d-flex align-items-center justify-content-center h-100">
+                                <h3 class="company-name-text">Domain Details</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back activeCompany">
+                            <div class="companyLogo d-flex align-items-center justify-content-center h-100">
+                                <h3 class="company-name-text-active">Domain Details</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style type="text/css">
+            </style>
+            <!-- Description on site, changed via JS -->
+            <div class="col-12 col-md-4 d-flex flex-column">
+                <h2 class="extra-bold companyHeading no-padding-top mt-0 align-self-md-end" id="companyTitle"> Codeero Development</h2>
+                <p class="companyDescription" id="companyDescription"> Codeero Development, the original branch of The Codeero Group, specializes in web and software development. The multinational, young and vibrant team serves clients of all sizes, from young startups, through small businesses to large multinational organizations. Codeero Development is your go-to partner for all your digital needs. </p>
+                <div class="switch-outline align-self-end">
+                    <div class='wrap d-flex' onclick='toggleButton(this)'>
+                        <div class="circleBG">
+                        </div>
+                        <span class='learnMore'>Learn More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Partners Section -->
+        <div class="row d-flex flex-column mt-100 mb-50">
+            <div class="col">
+                <h3 class="extra-bold section-title title center-mob">Some of the partners that trusted us</h3>
+                <h4 class="center-mob">We believe in building relationships, not client lists.</h4>
+            </div>
+            <div class="col mt-50">
+                <picture>
+                    <source media="(min-width: 450px)" srcset="../img/partners.png">
+                    <img src="../img/partners-mobile.png" class="img-responsive full-width">
+                </picture>
+            </div>
+        </div>
+        <!-- Above Grey Footer, Hide On Mobile -->
+        <div class="row mt-150 d-none d-md-flex">
+            <div class="col col-md-5 col-lg-5 mb-md-4">
+                <img src="../img/tcg.svg" class="img-responsive expanded">
+            </div>
+            <div class="col col-md-7 col-lg-7" id="map">
+                <iframe width="100%" height="350" frameborder="0" style="border:0; filter: grayscale(100%);" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJI1L--S8z5xQRAc-GHbuhRNo&key=AIzaSyBbj2T-E6FWqXCXzJrfbP5KIZlPanysVkI" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Contact Section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-5">
+                    <h2 class="extra-bold"> Contact Us <br> It's easy.</h2>
+                </div>
+            </div>
+            <div class="row align-content-end contactRow">
+                <div class="col-6 col-md-4 d-flex flex-column">
+                    <div class="contactMethod"><img src="../img/tel.svg" class="contactIcon"> <a href="tel:+35725000095"> +357 25 00 00 95</a></div>
+                    <div class="contactMethod"><img src="../img/mail.svg" class="contactIcon"> <a href="mailto:info@codeero.com"> info@codeero.com</a></div>
+                    <div class="contactMethod"><img src="../img/mail.svg" class="contactIcon"> <a href='https://www.codeero.com/tos' target="_blank" onclick="window.open('https://www.codeero.com/privacy');"> Privacy Policy & Terms of Service</a></div>
+                </div>
+                <div class=" col-6 col-md-4">
+                    <div class="contactMethod d-flex">
+                        <div>
+                            <img src="../img/map.svg" class="contactIcon pr-2">
+                        </div>
+                        <div>
+                            <a href="mailto:info@codeero.com">
+                                Agias Zonis 1
+                                <br> Office 607A
+                                <br> 3025 Limassol
+                                <br> Cyprus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-end">
+                    <div class="">
+                        <div class="socialIcons">
+                            <a href="https://www.facebook.com/thecodeerogroup"><img src="../img/fb.svg" class="socialIcon"></a>
+                            <a href="https://www.instagram.com/thecodeerogroup"><img src="../img/insta.svg" class="socialIcon"></a>
+                            <a href="../comingsoon"><img src="../img/twitter.svg" class="socialIcon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <!-- jQuery first,then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

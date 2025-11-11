@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="26px" viewBox="0 0 25 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.6657167,0 L25,4.25827778 L25,25.5555556 L16.6657167,21.2972722 L8.33428333,25.5555556 L0,21.2972722 L0,0 L8.33428333,3.19444444 L16.6657167,0 Z M2.22222222,3.33333333 L2.22222222,20.1597111 L8.33333333,23.3333333 L8.33333333,5.64883333 L7.63212778,5.45005556 L2.22222222,3.33333333 Z M16.5697278,2.22222222 L9.44444444,4.90855556 L9.44444444,22.7777778 L15.7326667,19.4178333 L16.6666667,19.0153889 L16.6666667,2.25388889 L16.5697278,2.22222222 Z M17.7777778,2.77777778 L17.7777778,19.0059444 L22.7777778,21.6666667 L22.7777778,5.37361111 L17.7777778,2.77777778 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WEB_DESKTOP" transform="translate(-312.000000, -2847.000000)">
+            <g id="CONTACT-DETAILS" transform="translate(92.000000, 2844.000000)">
+                <g id="ADRESS" transform="translate(220.000000, 0.000000)">
+                    <g id="Group-9" transform="translate(0.000000, 3.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-8"></g>
+                        <polygon id="Fill-7" fill="#232323" mask="url(#mask-2)" points="-2.77777778 -2.77777778 27.7777778 -2.77777778 27.7777778 28.3333333 -2.77777778 28.3333333"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
